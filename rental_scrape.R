@@ -46,3 +46,5 @@ get_html2 <- function(url){
 i = 1:239
 tokyo_all <- paste0("https://www.able.co.jp/list/?prefkey=tokyo&cf=0&ct=0&sf=0&st=0&b=1&b=2&b=3&k=1&jks=0&n=B&g=13101&g=13102&g=13103&g=13104&g=13105&g=13106&g=13107&g=13108&g=13109&g=13110&g=13111&g=13112&g=13113&g=13114&g=13115&g=13116&g=13117&g=13118&g=13119&g=13120&g=13121&g=13122&g=13123&o=&p=10&i=", i)
 all_data <- map_df(tokyo_all, get_html2)
+filename = paste0("tokyo_rent_", Sys.Date(), ".csv")
+write_csv(all_data, filename)
