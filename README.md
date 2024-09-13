@@ -1,7 +1,7 @@
 # Tokyo-Rent
 
 ### Description:
-This code is designed to scrape through all rental property available on the website `https://www.able.co.jp`. And perform analysis with the data collected.
+This code is designed to scrape through all rental property detail available on the website `https://www.able.co.jp` and output the CSV file.
 
 ### Scraping Script
 1. Scrape one page of all tokyo rental apartment.
